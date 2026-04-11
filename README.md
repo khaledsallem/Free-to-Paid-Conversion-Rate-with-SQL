@@ -1,23 +1,4 @@
-# Free-to-Paid-Conversion-Rate-with-SQL
-This project focuses on calculating the free-to-paid conversion rate of students using SQL. By analyzing a relational database containing student registration, engagement, and subscription purchase data, the goal is to estimate the proportion of users who become paying customers after starting a course. The project demonstrates the use of SQL techniques such as joins, subqueries, aggregations, and data filtering to compute key business metrics and gain insights into user conversion behavior.
-
-# The VENN Diagram below
-<img width="751" height="425" alt="Capture d&#39;écran 2026-04-10 121415" src="https://github.com/user-attachments/assets/447922ae-6e96-47d9-9e47-5f0c1de8e2ea" />
-
-# SQL CODE 
-
 use db_course_conversions;
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
 
@@ -180,5 +161,3 @@ FROM
         OR MIN(sp.date_purchased) IS NULL
 
 ) AS a;
-
-
